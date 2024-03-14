@@ -1,0 +1,66 @@
+all:
+  hosts:
+    test.romanstone.net
+  children:
+    Production Ubuntu Servers:
+      hosts:
+        operations.romanstone.net
+        hawk.romanstone.net
+        zabbix.romanstone.net
+        netbox.romanstone.net
+        vault.romanstone.net
+        ipam.romanstone.net
+        ansible.romanstone.net
+        www.romanstone.net
+        gitlab.romanstone.net
+        kasm.romanstone.net
+        checkmk.romanstone.net
+    Proxmox Servers:
+      hosts:
+        proxmox0.romanstone.net
+    Docker Servers:
+      hosts:
+        docker0.romanstone.net
+        docker1.romanstone.net
+    The Bakery:
+      hosts:
+        drone-d01.romanstone.net
+        drone-d02.romanstone.net
+        drone-d03.romanstone.net
+        drone-d04.romanstone.net
+        drone-d05.romanstone.net
+        drone-d06.romanstone.net
+        drone-d07.romanstone.net
+        drone-d08.romanstone.net
+        drone-d09.romanstone.net
+    Pi Cluster:
+       hosts: 
+        pi-master.romanstone.net
+        pi-worker0.romanstone.net
+        pi-worker1.romanstone.net
+        pi-worker3.romanstone.net
+    CM4 Cluster:
+      hosts:
+        cm4-1.romanstone.net
+        cm4-2.romanstone.net
+        cm4-3.romanstone.net
+        cm4-4.romanstone.net
+        cm4-5.romanstone.net
+        cm4-6.romanstone.net
+    Nameservers:
+      hosts:
+        ns1.romanstone.net
+        ns2.romanstone.net
+    The Elementals:
+      hosts:
+        air.romanstone.net
+        fire.romanstone.net
+        water.romanstone.net
+        aether.romanstone.net
+        earth.romanstone.net
+
+    Customers:
+       hosts:
+        drone-c001.hamster-quail.ts.net
+        drone-c000.hamster-quail.ts.net
+
