@@ -13,6 +13,7 @@ all:
         gitlab.romanstone.net
         kasm.romanstone.net
         checkmk.romanstone.net
+        teemip.romanstone.net
     Proxmox_Servers:
       hosts:
         proxmox0.romanstone.net
